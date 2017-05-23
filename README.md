@@ -1,2 +1,7 @@
-# upload_PIC
-this project for read local files and upload pic use nodejs and express.
+### 本地文件读取以及图片上传功能
+
+#### 本地文件读取
+
+- 搭建项目结构
+
+- 
