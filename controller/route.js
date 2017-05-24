@@ -21,7 +21,6 @@ exports.showPic = function(req,res,next){
     //获取文件名
     var folderName = req.params.folderName;
 
-
     file.getAllPic(folderName,function(err,picArray){
         //处理文件夹内文件找不到，找不到next()，交给下一个中间件
         if(err){
@@ -29,11 +28,8 @@ exports.showPic = function(req,res,next){
             return;
         }
         //返回文件名和图片路径
-        res.render("index",{"folderName":folderName,"picPath":picArray});
+        res.render("photoFile",{"folderName":folderName,"picPath":picArray});
     })
-
-
-
 
 }
 
