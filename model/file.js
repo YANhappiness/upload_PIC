@@ -26,12 +26,13 @@ exports.getAllFolder = function(callback){
                     callback(allFolderName);
                     return;
                 };
-                //如果没有找到该文件
-                if(err){
-                    //callback("没有找到该文件",null);
+
+                //如果没有找到该文件   ?????
+/*                if(err){
+                    callback("没有找到该文件",null);
                     //return;
                     throw err;
-                };
+                };*/
 
                 //判断文件类型是否为文件夹
                 if(stats.isDirectory()){

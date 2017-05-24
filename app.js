@@ -19,6 +19,6 @@ app.get("/",route.showIndex);          //处理首页请求
 app.get("/:folderName",route.showPic); //处理图片页面请求
 app.get("/upload",route.upload);       //跳转图片上传页面
 app.post("/upload",route.doupload);    //处理图片上传数据
-app.use(route.error);				   //处理无效请求	
+app.use(route.error);				   //处理无效请求
 //设置监听端口
 app.listen(80);

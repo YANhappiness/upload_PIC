@@ -55,4 +55,5 @@ exports.ico=function(req,res){
 //处理无效请求
 exports.error = function(req,res){
     res.render("error");
+    // res.end("error");
 }
