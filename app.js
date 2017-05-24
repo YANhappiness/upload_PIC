@@ -5,6 +5,7 @@ var app = express();
 var ejs = require('ejs');   //引入ejs模版引擎
 var route = require('./controller');   //引入控制层路由
 
+
 //设置模版类型
 app.set("view engine","ejs");
 
