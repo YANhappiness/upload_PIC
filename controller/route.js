@@ -33,8 +33,26 @@ exports.showPic = function(req,res,next){
 
 }
 
+//处理上传数据
+exports.doupload=function(req,res){
+    res.end("hello");
+}
+
+
+// 处理图片上传页面
+exports.upload=function(req,res){
+    //获取文件目录
+    file.getAllFolder(function(allFolderName){
+        res.render("upload",{"folder":allFolderName});
+    });
+}
 
 //暴露显示小图标方法
 exports.ico=function(req,res){
     return;
+}
+
+//处理无效请求
+exports.error = function(req,res){
+    res.render("error");
 }
