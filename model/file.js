@@ -79,6 +79,7 @@ exports.getAllPic=function(folderName,callback){
                 iterator(i+1);
             });
         })(0);
-       
+
+        //立即执行函数(function iterator(i){if(i<3){console.log(i)}})(0)   //1 2 3
     })
 };
