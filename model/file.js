@@ -23,27 +23,28 @@ exports.getAllFolder = function(callback){
                 //判断是否遍历结束
                 if(i == folder.length){
                     //将文件数组返回
-                    return callback(allFolderName);
-                }
+                    callback(allFolderName);
+                    return;
+                };
                 //如果没有找到该文件
                 if(err){
                     //callback("没有找到该文件",null);
                     //return;
                     throw err;
-                }
+                };
 
                 //判断文件类型是否为文件夹
                 if(stats.isDirectory()){
                     allFolderName.push(folder[i]);
-                }
+                };
                 iterator(i+1);
-            })
+            });
         })(0)
-
-
-
-
     });
-
-
 };
+
+//获取所有文件夹内图片
+exports.getAllPic=function(folderName,callback){
+        callback ["1480511707751_03.png"];
+    return;
+}

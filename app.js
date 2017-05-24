@@ -14,8 +14,9 @@ app.use(express.static('./public'));
 app.use(express.static('./upload'));
 
 //设置路由跳转
-app.get("/favicon.ico",route.ico);   //处理小图标请求
-app.get("/",route.showIndex);        //处理首页请求
+app.get("/favicon.ico",route.ico);        //处理小图标请求
+app.get("/",route.showIndex);             //处理首页请求
+app.get("/:folderName",route.showPic);  //处理图片页面请求
 
 //设置监听端口
 app.listen(80);
